@@ -5,8 +5,8 @@
     src: url('./../../../public/font/battambang.ttf')
 }
 @font-face {
-    font-family: 'Mukta.ttf';
-    src: url('./../../../public/font/Mukta.ttf')
+    font-family: 'Nokora';
+    src: url('./../../../public/font/Nokora/Nokora-Regular.ttf')
 }
 
 @tailwind utilities;

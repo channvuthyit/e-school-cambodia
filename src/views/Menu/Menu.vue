@@ -2,7 +2,7 @@
     <div class="bg-white">
         <div class="flex justify-between px-5 pt-3">
             <div class="menu">
-                <ul class="flex font-khmer_os items-center justify-between text-14px">
+                <ul class="flex font-khmer_os items-center justify-between text-base">
                     <li class="text-center mr-5 hover:text-custom pointer cursor-pointer"
                         @mouseover="icons.home.original = icons.home.hover"
                         @mouseout="icons.home.original = icons.home.out"

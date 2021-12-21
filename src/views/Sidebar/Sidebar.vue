@@ -7,12 +7,11 @@
             <div class="text-center">
                 <h1 class="mt-3 text-lg font-semibold text-gray-700">
                     {{stProfile.first_name}} {{stProfile.last_name}}</h1>
-                <!--<h2 class="text-sm text-gray-500 font-khmer_os font-14px "> ទូរស័ព្ទ: (+855){{stProfile.phone}}</h2>-->
             </div>
         </div>
         <hr>
         <div class="py-0 px-3 mt-3 pb-3">
-            <ul class="list-outside bg-rose-200 text-left mt-5 leading-8 font-khmer_os text-14px">
+            <ul class="list-outside bg-rose-200 text-left mt-5 leading-8 font-khmer_os text-base">
                 <li class="flex items-center hover:text-custom pointer cursor-pointer"
                     :class="$route.name == 'my-course'?'text-custom':''"
                     @mouseover="icons.course.original = icons.course.hover"
@@ -47,7 +46,7 @@
         </div>
         <hr>
         <div class="py-0 px-3 mt-3 pb-3">
-            <ul class="list-outside bg-rose-200 text-left leading-8 font-khmer_os  text-14px">
+            <ul class="list-outside bg-rose-200 text-left leading-8 font-khmer_os  text-base">
                 <li class="flex items-center hover:text-custom pointer cursor-pointer"
                     @click="goTo('change-profile')"
                     :class="$route.name == 'change-profile'?'text-custom':''"
@@ -111,7 +110,7 @@
         </div>
         <hr>
         <div class="py-0 px-3 mt-3">
-            <ul class="list-outside bg-rose-200 text-left mt-5 leading-8 font-khmer_os  text-14px">
+            <ul class="list-outside bg-rose-200 text-left mt-5 leading-8 font-khmer_os  text-base">
                 <li class="flex items-center hover:text-custom pointer cursor-pointer"
                     @click="goTo('term')"
                     :class="$route.name == 'term'?'text-custom':''"
@@ -144,7 +143,7 @@
             </ul>
         </div>
         <div class="absolute bottom-0 w-full text-white cursor-pointer" @click="userLogout">
-            <div class="font-khmer_os w-full p-3 bg-custom hover:bg-opacity-90 text-14px text-white text-center flex justify-center">
+            <div class="font-khmer_os w-full p-3 bg-custom hover:bg-opacity-90 text-base text-white text-center flex justify-center">
                 <LogoutIcon></LogoutIcon>
                 <button class="focus:outline-none ml-2">ចាកចេញ</button>
             </div>

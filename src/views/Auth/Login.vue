@@ -1,8 +1,8 @@
 <template>
     <div class="flex justify-center items-center min-h-screen bg-blue-50">
-        <div class="flex-col rounded w-96 p-6 shadow-lg bg-white">
-            <img src="/e-school-logo.png" class="m-auto w-20 mb-8"/>
-            <div class="font-khmer_os text-sm mb-5  p-0 flex justify-center items-center">
+        <div class="flex-col rounded-2xl w-96 p-6 shadow-lg bg-white">
+            <img src="/logo.svg" class="m-auto w-32 mb-8"/>
+            <div class="font-khmer_os text-base mb-5  p-0 flex justify-center items-center">
                 <div class="px-0 cursor-pointer" @click="switchTap('login')">
                     <p :class="tap=='login'?'text-blue-700':''">ចូលគណនី</p>
                 </div>
@@ -15,9 +15,9 @@
                 </div>
             </div>
             <div v-if="tap == 'login'">
-                <form class="flex-col text-sm font-khmer_os" v-if="tap == 'login'">
+                <form class="flex-col text-base font-khmer_os" v-if="tap == 'login'">
                     <div class="relative">
-                        <span class="absolute l-0 buttom-0 mt-2 text-sm font-medium text-gray-500 ">+855</span>
+                        <span class="absolute l-0 buttom-0 mt-2 text-base font-medium text-gray-500 ">+855</span>
                         <input type="text" placeholder="លេខទូរស័ព្ទ" v-model="auth.phone" @keypress="isNumber($event)"
                                class="p-2 border border-solid border-1 border-light-blue-500 w-full focus:outline-none border-t-0 border-r-0 border-l-0 mb-4 pl-10"/>
                         <span class="absolute r-0 buttom-0 mt-2 text-red-700 text-lg">*</span>
@@ -33,7 +33,7 @@
                     </div>
                 </form>
 
-                <div class="p-3 text-center flex justify-center items-center text-white rounded w-full text-sm outline-none text-sm cursor-pointer font-khmer_os hover:bg-blue-800"
+                <div class="p-3 text-center flex justify-center items-center text-white rounded-md w-full text-base outline-none text-base cursor-pointer font-khmer_os hover:bg-blue-800"
                      @click="studentLogin" :class="loginLoading?'bg-blue-400':'bg-blue-700'">
                     <div class="pl-2">
                         <span v-if="!loginLoading">ចូលគណនី</span>
@@ -58,7 +58,7 @@
     import Create from "./Create";
     import ForgotPassword from "./ForgotPassword"
     import Loader from "./../../components/Loader"
-    import Message from "./components/Message"
+    import Message from "./components/Message.vue"
     import helper from "./../../helper/helper"
     import {mapActions, mapState} from "vuex"
     import config from "./../../config"
@@ -130,6 +130,15 @@
                 if (this.loginLoading) {
                     return
                 }
+                if (!this.auth.phone) {
+                    this.errorMessage = "សូមបញ្ចូលលេខទូរស័ព្ទ";
+                    return;
+                }
+
+                if (!this.auth.password) {
+                    this.errorMessage = "សូមបញ្ចូលពាក្យសម្ងាត់";
+                    return;
+                }
 
                 if (this.auth.phone && this.auth.password) {
                     this.login(this.auth).then(response => {
@@ -182,14 +191,6 @@
                     });
 
                     return;
-                }
-
-                if (!this.auth.phone) {
-                    this.errorMessage = "សូមបញ្ចូលលេខទូរស័ព្ទ";
-                }
-
-                if (!this.auth.password) {
-                    this.errorMessage = "សូមបញ្ចូលពាក្យសម្ងាត់";
                 }
             }
         }

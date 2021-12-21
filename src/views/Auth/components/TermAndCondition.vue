@@ -2,10 +2,10 @@
     <div class="fixed z-10 inset-0 overflow-y-auto">
         <div class="flex items-end justify-center min-h-screen text-center sm:block sm:p-0">
             <div class="fixed inset-0 transition-opacity" aria-hidden="true">
-                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                <div class="absolute inset-0 bg-black opacity-95"></div>
             </div>
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div class="w-2/5 inline-block align-bottom bg-white rounded overflow-hidden shadow-xl transform transition-all  sm:align-middle px-5"
+            <div class="w-2/5 inline-block align-bottom bg-white rounded-xl overflow-hidden shadow-xl transform transition-all  sm:align-middle px-5"
                  role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div class="bg-white" @click="closeTermAndCondition">
                     <div v-if="loadingTerm" class="p-5">

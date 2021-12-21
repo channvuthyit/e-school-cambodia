@@ -185,7 +185,7 @@ module.exports = {
                 'monospace',
             ],
             khmer_os: [
-                'khmer os',
+                'Nokora',
                 'ui-sans-serif',
                 'system-ui',
                 '-apple-system',

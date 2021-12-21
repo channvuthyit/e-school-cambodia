@@ -7,7 +7,7 @@
             <div class="w-60 fixed border border-b-0 border-l-0 border-gray-200 min-h-screen">
                 <sidebar :stProfile="stProfile"/>
             </div>
-            <div class="ml-60 flex-1">
+            <div class="ml-60 flex">
                 <div class="border border-b-0 border-l-0 border-gray-200">
                     <Menu/>
                     <div class="flex justify-between items-center px-5 bg-white"

@@ -1,10 +1,10 @@
 <template>
     <div class="font-khmer_os">
-        <div v-if="success" class="flex items-center bg-success text-white text-sm font-bold px-4 py-3 mb-3 rounded"
+        <div v-if="success" class="flex items-center bg-success text-white text-base font-bold px-4 py-3 mb-3 rounded"
              role="alert">
             <p>គណនីត្រូវបានបង្កើតរួចរាល់</p>
         </div>
-        <form class="flex-col text-sm font-khmer_os">
+        <form class="flex-col text-base font-khmer_os">
             <div class="relative">
                 <input
                         type="text"
@@ -24,7 +24,7 @@
                 <span class="absolute r-0 buttom-0 mt-2 text-red-700 text-lg">*</span>
             </div>
         </form>
-        <div class="flex justify-center items-center text-sm font-khmer_os">
+        <div class="flex justify-center items-center text-base font-khmer_os">
             <label class="flex mr-10">
                 <input type="radio" class="mr-2" name="gender" value="M" v-model="studentInfo.gender"/>
                 <span>ប្រុស</span>
@@ -41,9 +41,9 @@
                     <span style="background-color:#fff;padding:0px 5px;">ពត៏មានផ្ទាល់ខ្លួន</span>
                 </div>
             </div>
-            <form class="flex-col text-sm font-khmer_os w-full p-5">
+            <form class="flex-col text-base font-khmer_os w-full p-5">
                 <div class="relative">
-                    <span class="absolute l-0 buttom-0 mt-2 text-sm font-medium text-gray-500 ">+855</span>
+                    <span class="absolute l-0 buttom-0 mt-2 text-base font-medium text-gray-500 ">+855</span>
                     <input type="text" placeholder="លេខទូរស័ព្ទ"
                            v-model="studentInfo.phone"
                            @keypress="isNumber($event)"
@@ -65,7 +65,7 @@
             </form>
         </div>
         <div class="flex justify-center items-center mt-4">
-            <label class="flex text-sm">
+            <label class="flex text-base">
                 <input type="radio" class="mr-3 cursor-pointer" v-model="studentInfo.accepted_term"
                        :checked="studentInfo.accepted_term"
                        value="1"
@@ -76,7 +76,7 @@
                 </div>
             </label>
         </div>
-        <button class="p-3 mt-4 text-center bg-blue-700 text-white rounded w-full text-sm outline-none text-sm cursor-pointer font-khmer_os"
+        <button class="p-3 mt-4 text-center bg-blue-700 text-white rounded w-full text-base outline-none text-base cursor-pointer font-khmer_os"
                 @click="createAccount" :disabled="(loadingRegister || success)"
                 :class="(loadingRegister || success)?'bg-opacity-70':'hover:bg-blue-800'">
             បង្កើតគណនីថ្មី
@@ -89,10 +89,10 @@
 
 <script>
     import {mapState, mapActions} from "vuex"
-    import ErrMessage from "./components/ErrMessage"
+    import ErrMessage from "./components/ErrMessage.vue"
     import Loader from "./../../components/Loader"
     import helper from "./../../helper/helper"
-    import TermAndCondition from "./components/TermAndCondition"
+    import TermAndCondition from "./components/TermAndCondition.vue"
     import config from "./../../config"
     export default{
         name: "Create",

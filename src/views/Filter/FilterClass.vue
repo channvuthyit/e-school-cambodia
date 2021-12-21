@@ -1,5 +1,5 @@
 <template>
-    <div class="w-96 pb-1"
+    <div class="w-110 pb-1"
          v-if="$route.name !=='change-profile' && $route.name !=='about'
          && $route.name !=='lock' && $route.name !=='discuss'&& $route.name !=='test'
          && $route.name !=='other'  && $route.name !=='help' && $route.name !=='term'
@@ -8,7 +8,7 @@
         <vue-horizontal responsive>
             <section style="white-space: nowrap; width: auto">
             <div class="text-center cursor-pointer flex-cols justify-center items-center">
-                    <div class="break-all text-14px font-khmer_os text-center my-2  hover:bg-gray-300 rounded-full py-1 px-2 border border-gray-300"
+                    <div class="break-all text-base font-khmer_os text-center my-2  hover:bg-gray-300 rounded-full py-1 px-2 border border-gray-300"
                          :class="gradeActive === ''?'bg-gray-300':'bg-gray-100'"
                          v-if="courses && courses.grade && courses.grade.length"
                          @click="filterGradeId('')">
@@ -18,7 +18,7 @@
             </section>
             <section v-for="(grade, key) in courses.grade" v-bind:key="key" style="white-space: nowrap; width: auto">
                 <div class="text-center cursor-pointer flex-cols justify-center items-center">
-                    <div class="break-all text-14px font-khmer_os text-center my-2 hover:bg-gray-300 rounded-full py-1 px-2 border border-gray-300"
+                    <div class="break-all text-base font-khmer_os text-center my-2 hover:bg-gray-300 rounded-full py-1 px-2 border border-gray-300"
                          :class="gradeActive === grade._id?'bg-gray-300':'bg-gray-100'"
                          @click="filterGradeId(grade._id)">
                         {{grade.name}}
