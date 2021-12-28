@@ -3,10 +3,10 @@
         <div class="fixed inset-0 overflow-y-auto" style="z-index: 51" v-if="!showAnswer">
             <div class="flex items-end justify-center min-h-screen text-center sm:block sm:p-0">
                 <div class="fixed inset-0 transition-opacity" aria-hidden="true">
-                    <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                    <div class="absolute inset-0 bg-black opacity-75"></div>
                 </div>
                 <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-                <div class="inline-block align-bottom bg-white rounded text-left overflow-hidden shadow-xl transform transition-all  sm:align-middle"
+                <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all  sm:align-middle"
                      :class="`w-${size}`" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                     <div class="header flex justify-between items-center p-4 border border-gray-200 border-t-0 border-l-0 border-r-0 text-sm font-khmer_os">
                         <div class="text-left w-full font-semibold text-sm text-center">

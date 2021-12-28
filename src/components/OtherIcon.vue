@@ -1,27 +1,21 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-         width="24" height="24"
-         viewBox="0 0 172 172"
-         style="fill:#000000;">
-        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-           stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-           font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <path d="M0,172v-172h172v172z" fill="none"></path>
-            <g :fill="fill">
-                <path d="M17.2,13.76c-1.89978,0.00019 -3.43981,1.54022 -3.44,3.44v137.6c0.00019,1.89978 1.54022,3.43981 3.44,3.44h137.6c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-137.6c-0.00019,-1.89978 -1.54022,-3.43981 -3.44,-3.44zM20.64,20.64h61.92v61.92h-61.92zM89.44,20.64h61.92v61.92h-61.92zM20.64,89.44h61.92v61.92h-61.92zM89.44,89.44h61.92v61.92h-61.92z"></path>
-            </g>
-        </g>
+    <svg aria-hidden="true" :width="size" :height="size" focusable="false" data-prefix="fas" data-icon="border-all" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-border-all fa-w-14 fa-3x">
+        <path :fill="fill" d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-32 64v128H256V96zm-192 0v128H64V96zM64 416V288h128v128zm192 0V288h128v128z" class=""/>
     </svg>
+
 </template>
 
 <script>
     export default{
-        name: "OtherIcon",
         props: {
             fill: {
-                type: String,
                 default: function () {
                     return "#000000"
+                }
+            },
+            size: {
+                default: function () {
+                    return 24
                 }
             }
         }

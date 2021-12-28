@@ -37,7 +37,7 @@
 
                                 </div>
                                 <div class="flex justify-end">
-                                    <button class="bg-blue-700 rounded px-5 py-3 text-white mt-5 font-khmer_os hover:bg-blue-800 focus:outline-none"
+                                    <button class="bg-primary rounded px-5 py-3 text-white mt-5 font-khmer_os hover:bg-opacity-90 focus:outline-none"
                                             :disabled="changing"
                                             @click="changePassword"
                                     >

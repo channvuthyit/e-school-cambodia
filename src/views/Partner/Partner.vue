@@ -93,7 +93,7 @@
     import Loading from "./../../components/Loading"
     import CartIcon from "./../../components/CartIcon"
     import VueHorizontal from "vue-horizontal";
-    import Message from "./../MyCourse/components/Message"
+    import Message from "./../MyCourse/components/Message.vue"
     import Cart from "./../MyCourse/components/Cart"
     const {ipcRenderer} = require('electron')
     import err from "./../../helper/err"

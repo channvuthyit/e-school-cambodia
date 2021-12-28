@@ -1,7 +1,10 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-    purge: [],
+    purge: [
+        './src/**/*.html',
+        './src/**/*.js',
+    ],
     // presets: [],
     darkMode: false, // or 'media' or 'class'
     theme: {
@@ -15,9 +18,10 @@ module.exports = {
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
-            custom: '#00a0e4',
+            custom: '#40b366',
             success: '#40b366',
             black: colors.black,
+            primary:"#40b366",
             white: colors.white,
             gray: colors.coolGray,
             red: colors.red,
@@ -113,7 +117,7 @@ module.exports = {
         borderColor: (theme) => ({
             ...theme('colors'),
             DEFAULT: theme('colors.gray.200', 'currentColor'),
-            'primary': '#00a0e4',
+            'primary': '#40b366',
         }),
         borderOpacity: (theme) => theme('opacity'),
         borderRadius: {
@@ -186,20 +190,7 @@ module.exports = {
             ],
             khmer_os: [
                 'Nokora',
-                'ui-sans-serif',
-                'system-ui',
-                '-apple-system',
-                'BlinkMacSystemFont',
-                '"Segoe UI"',
-                'Roboto',
-                '"Helvetica Neue"',
-                'Arial',
-                '"Noto Sans"',
-                'sans-serif',
-                '"Apple Color Emoji"',
-                '"Segoe UI Emoji"',
-                '"Segoe UI Symbol"',
-                '"Noto Color Emoji"',
+                'Barlow',
             ],
 
         },

@@ -1,17 +1,8 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-         :width="width" :height="height"
-         viewBox="0 0 172 172"
-         style=" fill:#000000;">
-        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-           stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-           font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <path d="M0,172v-172h172v172z" fill="none"></path>
-            <g :fill="fill">
-                <path d="M41.28,6.88c-11.35469,0 -20.64,9.28531 -20.64,20.64v118.39781c0,10.92469 9.74219,19.20219 20.64,19.20219h110.08v-6.88h-110.08c-7.43094,0 -13.76,-5.57656 -13.76,-12.32219c0,-6.74563 6.19469,-11.75781 13.76,-11.75781h110.08v-127.28zM41.28,13.76h103.2v113.52h-103.2c-5.13312,0 -9.9975,1.85438 -13.76,4.87781v-104.63781c0,-7.6325 6.1275,-13.76 13.76,-13.76zM51.6,30.96c-3.7625,0 -6.88,3.1175 -6.88,6.88v13.76c0,3.7625 3.1175,6.88 6.88,6.88h72.24c3.7625,0 6.88,-3.1175 6.88,-6.88v-13.76c0,-3.7625 -3.1175,-6.88 -6.88,-6.88zM51.6,37.84h72.24v13.76h-72.24z"></path>
-            </g>
-        </g>
+    <svg aria-hidden="true" :width="width" :height="height" focusable="false" data-prefix="fas" data-icon="books" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-books fa-w-18 fa-3x">
+        <path :fill="fill" d="M575.11 443.25L461.51 19.06C458.2 6.7 445.61-3.18 430.15.96L414.7 5.1c-6.18 1.66-11.53 6.4-16.06 14.24-14.03 6.94-52.3 17.21-68 18.22-7.84-4.53-14.85-5.96-21.03-4.3l-15.46 4.14c-2.42.65-4.2 1.95-6.15 3.08V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v64h128l101.66 396.94c3.31 12.36 15.9 22.24 31.36 18.1l15.45-4.14c6.18-1.66 11.53-6.4 16.06-14.24 13.91-6.88 52.18-17.2 68-18.22 7.84 4.53 14.85 5.96 21.03 4.3l15.46-4.14c15.45-4.14 21.41-18.99 18.09-31.35zm-134.4-7.06L348.64 92.37l61.82-16.56 92.07 343.82-61.82 16.56zM0 384h128V128H0v256zM96 0H32C14.33 0 0 14.33 0 32v64h128V32c0-17.67-14.33-32-32-32zM0 480c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H0v64zm160-96h128V128H160v256zm0 96c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H160v64z" class=""/>
     </svg>
+
 </template>
 
 <script>
@@ -22,13 +13,13 @@
             width: {
                 type: Number,
                 default: function(){
-                    return 24
+                    return 28
                 }
             },
             height: {
                 type: Number,
                 default: function(){
-                    return 24;
+                    return 28;
                 }
             },
             fill: {

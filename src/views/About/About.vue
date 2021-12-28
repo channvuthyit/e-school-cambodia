@@ -21,7 +21,7 @@
                         <div class="mr-2 opacity-60">
                             <PhoneIcon></PhoneIcon>
                         </div>
-                        <div class="pb-3 text-blue-700 border border-gray-100 border-t-0 border-l-0 border-r-0 flex-1">
+                        <div class="pb-3 text-primary border border-gray-100 border-t-0 border-l-0 border-r-0 flex-1">
                             {{company.phone}}
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="mr-2 opacity-50 ">
                             <WebIcon></WebIcon>
                         </div>
-                        <div class="cursor-pointer pb-3 text-blue-700 border border-gray-100 border-t-0 border-l-0 border-r-0 flex-1"
+                        <div class="cursor-pointer pb-3 text-primary border border-gray-100 border-t-0 border-l-0 border-r-0 flex-1"
                              @click="openLink(company.website)">
                             {{company.website}}
                         </div>

@@ -74,7 +74,6 @@
             </div>
         </div>
         <div class="border border-b-0 border-l-0 border-r-0 mt-2 border-gray-200 pl-3">
-            &nbsp;
         </div>
         <Cart v-if="showCart" @closeCart="closeCart"></Cart>
         <Notification v-if="showNotification" @closeNotification="closeNotification"
@@ -86,17 +85,17 @@
 </template>
 
 <script>
-    import HomeIcon from "./../../components/HomeIcon"
-    import BookIcon from "./../../components/BookIcon"
-    import VideoIcon from "./../../components/VideoIcon"
-    import TestIcon from "./../../components/TestIcon"
-    import DiscussionIcon from "./../../components/DiscussionIcon"
-    import PartnershipIcon from "./../../components/PartnershipIcon"
-    import CartIcon from "./../../components/CartIcon"
-    import NotificationIcon from "./../../components/NotificationIcon"
+    import HomeIcon from "./../../components/HomeIcon.vue"
+    import BookIcon from "./../../components/BookIcon.vue"
+    import VideoIcon from "./../../components/VideoIcon.vue"
+    import TestIcon from "./../../components/TestIcon.vue"
+    import DiscussionIcon from "./../../components/DiscussionIcon.vue"
+    import PartnershipIcon from "./../../components/PartnershipIcon.vue"
+    import CartIcon from "./../../components/CartIcon.vue"
+    import NotificationIcon from "./../../components/NotificationIcon.vue"
     import {mapState, mapActions} from "vuex"
     import Cart from "./../MyCourse/components/Cart.vue"
-    import Notification from "./../../components/Notification"
+    import Notification from "./../../components/Notification.vue"
     import NotificationDetail from "./../../components/NotificationDetail"
 
 
@@ -125,32 +124,32 @@
                     home: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     video: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     book: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     test: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     discuss: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     partner: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     }
                 }
             }

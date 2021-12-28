@@ -20,7 +20,7 @@
       </div>
       <hr>
       <div class="flex justify-center items-center font-khmer_os py-3">
-        <button type="button" @click="closeMessage" class="w-full inline-flex justify-center  px-4   text-base font-medium text-blue-700  focus:outline-none sm:ml-3 sm:w-auto sm:text-base">
+        <button type="button" @click="closeMessage" class="w-full inline-flex justify-center  px-4   text-base font-medium text-primary  focus:outline-none sm:ml-3 sm:w-auto sm:text-base">
           បាទ/ចាស
         </button>
       </div>

@@ -6,17 +6,17 @@
             </div>
 
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div class="inline-block align-bottom bg-white rounded text-left overflow-hidden shadow-xl transform transition-all  sm:align-middle"
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all  sm:align-middle"
                  :class="`w-${size}`" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div class="bg-white">
                     <div class="flex justify-center items-center">
                         <div class="mt-2 py-2 w-60">
                             <div class="border border-gray-200 border-t-0 border-l-0 border-r-0 flex justify-center items-center">
-                                <p class="text-sm text-black text-sm font-khmer_os mb-3">
+                                <p class="text-base text-black  font-khmer_os mb-3">
                                     {{ message }}
                                 </p>
                             </div>
-                            <ul class="list-none font-khmer_os text-blue-700">
+                            <ul class="list-none font-khmer_os text-primary">
                                 <li class="border border-t-0 py-2 border-l-0 border-r-0 border-gray-200 text-center cursor-pointer hover:bg-gray-50"
                                     @click="chooseDuration(1)" :class="duration === 1?'text-red-500':'text-black'">1 ខែ
                                 </li>
@@ -37,9 +37,9 @@
                     </div>
                 </div>
                 <hr>
-                <div class="sm:flex sm:flex-row text-sm font-khmer_os py-3 justify-center items-center">
+                <div class="sm:flex sm:flex-row text-base font-khmer_os py-3 justify-center items-center">
                     <button type="button" @click="closeDuration"
-                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-blue-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-primary focus:outline-none sm:ml-3 sm:w-auto sm:text-base">
                         បោះបង់
                     </button>
                 </div>

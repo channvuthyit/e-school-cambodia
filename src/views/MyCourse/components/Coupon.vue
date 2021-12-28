@@ -1,34 +1,14 @@
 <template>
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="fixed inset-0 overflow-y-auto" style="z-index: 52">
         <div class="flex items-end justify-center min-h-screen text-center sm:block sm:p-0" v-if="!showErr">
-            <!--
-              Background overlay, show/hide based on modal state.
-
-              Entering: "ease-out duration-300"
-                From: "opacity-0"
-                To: "opacity-100"
-              Leaving: "ease-in duration-200"
-                From: "opacity-100"
-                To: "opacity-0"
-            -->
+          
             <div class="fixed inset-0 transition-opacity" aria-hidden="true">
                 <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
 
-            <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <!--
-              Modal panel, show/hide based on modal state.
-
-              Entering: "ease-out duration-300"
-                From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                To: "opacity-100 translate-y-0 sm:scale-100"
-              Leaving: "ease-in duration-200"
-                From: "opacity-100 translate-y-0 sm:scale-100"
-                To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            -->
-            <div class="w-64 inline-block align-bottom bg-white rounded text-left overflow-hidden shadow-xl transform transition-all  sm:align-middle"
+          
+            <div class="w-64 inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all  sm:align-middle"
                  role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div class="bg-white">
                     <div class="flext justify-center items-center">
@@ -40,7 +20,7 @@
                                 <div class="relative">
                                     <input type="text"
                                            v-model="code"
-                                           class="rounded border border-gray-300 p-1 focus:outline-none w-full"/>
+                                           class="rounded-md border border-gray-300 p-1 focus:outline-none w-full"/>
                                     <img src="ajax-loader.gif" class="absolute right-0 top-0 mt-2 mr-5"
                                          v-if="checkingCoupon">
                                 </div>
@@ -51,12 +31,12 @@
                 <hr>
                 <div class="sm:flex sm:flex-row text-sm font-khmer_os h-10 justify-center items-center">
                     <button type="button" @click="closeCoupon"
-                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-blue-700 focus:outline-none sm:w-auto sm:text-sm">
+                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-primary focus:outline-none sm:w-auto sm:text-sm">
                         បោះបង់
                     </button>
                     <div class="h-10 border border-gray-300 border-l-0 border-t-0 border-b-0" style="width:0px;"></div>
                     <button type="button" @click="checkCouponExist" :disabled="checkingCoupon"
-                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-blue-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-primary focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
                         បាទ/ចាស់
                     </button>
                 </div>
@@ -67,7 +47,7 @@
 </template>
 <script>
     import {mapActions, mapState} from "vuex"
-    import CouponErr from "./CouponErr"
+    import CouponErr from "./CouponErr.vue"
     export default{
         name: "Coupon",
         components: {

@@ -13,7 +13,7 @@
                  :class="window.width <=1366?'grid-cols-3':window.width <=1440?'grid-cols-3':'grid-cols-4'"
             >
                 <div v-for="(receipt,key) in receipts" :key="key">
-                    <div class="flex rounded border border-gray-300 p-3 items-center relative">
+                    <div class="flex rounded-xl border border-gray-300 p-3 items-center relative">
                         <div class="flex flex-1 z-40  cursor-pointer" @click="viewReceipt(receipt)">
                             <div class="mr-3">
                                 <InvoiceIcon size="40" :fill="receipt.status !==1?'#000000':'#34D399'"></InvoiceIcon>

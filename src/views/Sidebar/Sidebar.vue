@@ -1,5 +1,5 @@
 <template>
-    <div class="font-khmer_os bg-white h-screen">
+    <div class="font-khmer_os bg-white h-screen w-56">
         <div class="p-5">
             <div class=" flex items-center justify-center items-center">
                 <img :src="stProfile.photo" class="rounded-full h-24 w-24 object-cover shadow">
@@ -63,8 +63,10 @@
                     @mouseout="icons.lock.original = icons.lock.out"
                     @click="goTo('lock')"
                 >
-                    <LockIcon
+                    <div class="text-black">
+                        <LockIcon
                             :fill="$route.name == 'lock'?icons.lock.hover:icons.lock.original"></LockIcon>
+                    </div>
                     <span class="ml-2">កែប្រែពាក្យសម្ងាត់</span>
                 </li>
                 <li class="flex items-center hover:text-custom pointer cursor-pointer"
@@ -142,7 +144,7 @@
                 </li>
             </ul>
         </div>
-        <div class="absolute bottom-0 w-full text-white cursor-pointer" @click="userLogout">
+        <div class="absolute bottom-0 text-white cursor-pointer w-56" @click="userLogout">
             <div class="font-khmer_os w-full p-3 bg-custom hover:bg-opacity-90 text-base text-white text-center flex justify-center">
                 <LogoutIcon></LogoutIcon>
                 <button class="focus:outline-none ml-2">ចាកចេញ</button>
@@ -152,20 +154,20 @@
 </template>
 
 <script>
-    import FavoriteIcon from "./../../components/FavoriteIcon"
-    import InvoiceIcon from "./../../components/InvoiceIcon"
-    import InsuranceIcon from "./../../components/InsuranceIcon"
+    import FavoriteIcon from "./../../components/FavoriteIcon.vue"
+    import InvoiceIcon from "./../../components/InvoiceIcon.vue"
+    import InsuranceIcon from "./../../components/InsuranceIcon.vue"
     import LogoutIcon from "./../../components/LogoutIcon"
-    import LockIcon from "./../../components/LockIcon"
-    import YourCourseIcon from "./../../components/YourCourseIcon"
-    import UserIcon from "./../../components/UserIcon"
-    import OtherIcon from "./../../components/OtherIcon"
-    import DownloadIcon from "./../../components/DownloadIcon"
-    import InfoIcon from "./../../components/InfoIcon"
-    import HelpIcon from "./../../components/HelpIcon"
+    import LockIcon from "./../../components/LockIcon.vue"
+    import YourCourseIcon from "./../../components/YourCourseIcon.vue"
+    import UserIcon from "./../../components/UserIcon.vue"
+    import OtherIcon from "./../../components/OtherIcon.vue"
+    import DownloadIcon from "./../../components/DownloadIcon.vue"
+    import InfoIcon from "./../../components/InfoIcon.vue"
+    import HelpIcon from "./../../components/HelpIcon.vue"
     import {mapActions} from "vuex"
-    import TermAndConditionIcon from "./../../components/TermIcon"
-    import GuardianIcon from "./../../components/GuardianIcon"
+    import TermAndConditionIcon from "./../../components/InsuranceIcon.vue"
+    import GuardianIcon from "./../../components/GuardianIcon.vue"
 
     export default{
         name: "Sidebar",
@@ -215,67 +217,67 @@
                     home: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     course: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     lock: {
-                        original: '#6f6f6f',
-                        out: '#6f6f6f',
-                        hover: '#00a0e4'
+                        original: '#000000',
+                        out: '#000000',
+                        hover: '#40b366'
                     },
                     favorite: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     other: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     help: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     change_profile: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     about: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     term: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     guardian: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     insurance: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     invoice: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     },
                     download: {
                         original: '#000000',
                         out: '#000000',
-                        hover: '#00a0e4'
+                        hover: '#40b366'
                     }
                 }
             }

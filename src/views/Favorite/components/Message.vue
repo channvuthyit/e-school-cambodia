@@ -24,7 +24,7 @@
                 <hr>
                 <div class="sm:flex sm:flex-row text-sm font-khmer_os h-10 justify-center items-center">
                     <button type="button" @click="deleteFavorite"
-                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-blue-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+                            class="w-full inline-flex justify-center  px-4   text-base font-medium text-primary focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
                         <span v-if="gender() === 'M'">បាទ</span>
                         <span v-else>ចាស់</span>
                     </button>

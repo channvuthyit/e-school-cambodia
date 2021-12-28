@@ -26,7 +26,7 @@
                         <div class="mt-4" v-if="!courseDetail.is_buy">
                             <button class="flex items-center bg-custom font-khmer_os font-13px text-white hover:bg-opacity-80 px-3 py-2 focus:outline-none rounded-full"
                                     @click="buy">
-                                <CartIcon :width="20" :height="20"/>
+                                <CartIcon :width="20" :height="20" fill="#FFF"/>
                                 <span class="pl-1 font-thin">ទិញថ្នាក់នេះ</span>
                             </button>
                         </div>
@@ -127,11 +127,11 @@
     import IconLog from "./../../components/IconLog"
     import DownloadLessonIcon from "./../../components/DownloadLessonIcon"
     import IconPlayActive from "./../../components/IconPlayActive"
-    import Message from "./components/Message"
-    import MessageConfirm from "./components/MessageConfirm"
+    import Message from "./components/Message.vue"
+    import MessageConfirm from "./components/MessageConfirm.vue"
     import PaymentMethod from "./components/PaymentMethod"
     import Cart from "./components/Cart"
-    import CartIcon from "./components/CartIcon"
+    import CartIcon from "./../../components/CartIcon.vue"
     import MediaPlayer from "./components/media/Player"
     import Loading from "./../../components/Loading"
     import DownloadingIcon from "./../../components/DownloadingIcon"

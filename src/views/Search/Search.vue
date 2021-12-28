@@ -8,8 +8,8 @@
         <input type="text" placeholder="ស្វែងរកមេរៀន"
                v-on:keyup.enter="setQueryString"
                v-model="s"
-               class="h-9 w-80 96-3 font-khmer_os focus:outline-none border pl-3 border-r-0 text-base rounded-md rounded-r-none">
-        <div class="border border-gray-300 bg-gray-50 px-5 cursor-pointer flex  justify-center items-center rounded-md rounded-l-none"
+               class="border border-gray-400 h-9 w-80 96-3 font-khmer_os focus:outline-none border pl-3 border-r-0 text-base rounded rounded-r-none">
+        <div class="border border-gray-400 bg-gray-50 px-5 cursor-pointer flex  justify-center items-center rounded-l-none rounded"
              @click="setQueryString">
             <SearchIcon/>
         </div>

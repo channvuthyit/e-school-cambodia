@@ -71,14 +71,14 @@
                        value="1"
                        name="term"
                 >
-                <div class="flex"><span class="pr-3">ខ្ញុំយល់ព្រមទៅនឹង</span><span class="text-blue-700 cursor-pointer"
-                                                                                   @click="showTermAndCondition">លក្ខខណ្ឌនៃការប្រើប្រាស់</span>
+                <div class="flex"><span class="pr-3">ខ្ញុំយល់ព្រមទៅនឹង</span><span class="text-primary cursor-pointer"
+                    @click="showTermAndCondition">លក្ខខណ្ឌនៃការប្រើប្រាស់</span>
                 </div>
             </label>
         </div>
-        <button class="p-3 mt-4 text-center bg-blue-700 text-white rounded w-full text-base outline-none text-base cursor-pointer font-khmer_os"
+        <button class="p-3 mt-4 text-center bg-primary text-white rounded w-full text-base outline-none text-base cursor-pointer font-khmer_os"
                 @click="createAccount" :disabled="(loadingRegister || success)"
-                :class="(loadingRegister || success)?'bg-opacity-70':'hover:bg-blue-800'">
+                :class="(loadingRegister || success)?'bg-opacity-70':'hover:bg-opacity-90'">
             បង្កើតគណនីថ្មី
             <Loader v-if="loadingRegister" :size="10"></Loader>
         </button>

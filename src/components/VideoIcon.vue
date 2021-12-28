@@ -1,26 +1,21 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-         width="26" height="26"
-         viewBox="0 0 172 172"
-         style=" fill:#000000;">
-        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-           stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-           font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <path d="M0,172v-172h172v172z" fill="none"></path>
-            <g :fill="fill">
-                <path d="M86,6.88c-43.65603,0 -79.12,35.46397 -79.12,79.12c0,43.65603 35.46397,79.12 79.12,79.12c43.65603,0 79.12,-35.46397 79.12,-79.12c0,-43.65603 -35.46397,-79.12 -79.12,-79.12zM86,13.76c39.93779,0 72.24,32.30221 72.24,72.24c0,39.93779 -32.30221,72.24 -72.24,72.24c-39.93779,0 -72.24,-32.30221 -72.24,-72.24c0,-39.93779 32.30221,-72.24 72.24,-72.24zM61.7789,44.84765c-0.91465,0.00008 -1.79162,0.36439 -2.43711,1.0124c-0.64549,0.64801 -1.00637,1.5264 -1.00289,2.44104v0.08062c-0.00002,0.00672 -0.00002,0.01344 0,0.02015l0.28891,75.56578c0.0032,1.23018 0.66302,2.36504 1.73052,2.97643c1.0675,0.61139 2.38022,0.60626 3.44292,-0.01346l65.21219,-38.08188c1.06271,-0.61806 1.71486,-1.75622 1.7107,-2.98559c-0.00416,-1.22937 -0.66399,-2.36309 -1.73086,-2.97395l-65.5011,-37.58469v0.00672c-0.52072,-0.30172 -1.11147,-0.46157 -1.71328,-0.4636zM65.23906,54.24719l55.16765,31.65875l-54.91906,32.0686z"></path>
-            </g>
-        </g>
+    <svg aria-hidden="true" :width="size" :height="size" focusable="false" data-prefix="far" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+        <path :fill="fill" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z" class=""/>
     </svg>
+
 </template>
 <script>
     export default{
         name: "VideoIcon",
         props: {
             fill: {
-                type: String,
                 default: function () {
                     return "#000000"
+                }
+            },
+            size: {
+                default: function () {
+                    return 28
                 }
             }
         }

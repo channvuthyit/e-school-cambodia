@@ -19,7 +19,7 @@
             <div v-if="guardians && guardians.length">
                 <div class="grid grid-cols-3 gap-4">
                     <div v-for="(guardian, key) in guardians" :key="key">
-                        <div class="flex font-khmer_os text-14px border border-gray-300 rounded p-3 relative">
+                        <div class="flex font-khmer_os text-14px border border-gray-300 rounded-xl p-3 relative">
                             <div class="w-16 h-16 rounded-full mr-3 "
                                  :style="{backgroundImage:`url(${guardian.photo})`,backgroundSize:`cover`}"></div>
                             <div>

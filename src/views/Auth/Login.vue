@@ -4,14 +4,14 @@
             <img src="/logo.svg" class="m-auto w-32 mb-8"/>
             <div class="font-khmer_os text-base mb-5  p-0 flex justify-center items-center">
                 <div class="px-0 cursor-pointer" @click="switchTap('login')">
-                    <p :class="tap=='login'?'text-blue-700':''">ចូលគណនី</p>
+                    <p :class="tap=='login'?'text-primary':''">ចូលគណនី</p>
                 </div>
                 <div class="flex justify-center items-center w-10">
                     <div class="border -2 border-t-0 border-b-0 border-l-0 border-gray-300 h-5">
                     </div>
                 </div>
                 <div @click="switchTap('create')" class="cursor-pointer">
-                    <p :class="tap=='create'?'text-blue-700':''">បង្កើតគណនីថ្មី</p>
+                    <p :class="tap=='create'?'text-primary':''">បង្កើតគណនីថ្មី</p>
                 </div>
             </div>
             <div v-if="tap == 'login'">
@@ -28,13 +28,13 @@
                                class="p-2 px-0 border border-solid border-1 border-light-blue-500 w-full focus:outline-none border-t-0 border-r-0 border-l-0 mb-4"/>
                         <span class="absolute r-0 buttom-0 mt-2 text-red-700 text-lg">*</span>
                     </div>
-                    <div class="text-right text-blue-700 cursor-pointer mb-4 mt-1" @click="showForgotPassword()">
+                    <div class="text-right text-primary cursor-pointer mb-4 mt-1" @click="showForgotPassword()">
                         ភ្លេចពាក្យសម្ងាត់
                     </div>
                 </form>
 
-                <div class="p-3 text-center flex justify-center items-center text-white rounded-md w-full text-base outline-none text-base cursor-pointer font-khmer_os hover:bg-blue-800"
-                     @click="studentLogin" :class="loginLoading?'bg-blue-400':'bg-blue-700'">
+                <div class="p-3 text-center flex justify-center items-center text-white rounded-md w-full text-base outline-none text-base cursor-pointer font-khmer_os hover:bg-opacity-90"
+                     @click="studentLogin" :class="loginLoading?'bg-primary bg-opacity-70':'bg-primary'">
                     <div class="pl-2">
                         <span v-if="!loginLoading">ចូលគណនី</span>
                         <span v-else>កុំពុងដំណើការ &nbsp;<Loader :size="10"/></span>

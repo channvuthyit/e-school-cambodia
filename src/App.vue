@@ -1,14 +1,14 @@
 <template>
-    <div id="app">
+    <div id="app" class="relative">
         <div v-if="$route.name == 'login' || $route.name == 'change-password'  ">
             <router-view/>
         </div>
         <div class="flex  max-h-screen" v-else>
-            <div class="w-60 fixed border border-b-0 border-l-0 border-gray-200 min-h-screen">
+            <div class="border-r">
                 <sidebar :stProfile="stProfile"/>
             </div>
-            <div class="ml-60 flex">
-                <div class="border border-b-0 border-l-0 border-gray-200">
+            <div class="flex w-full ">
+                <div class="border border-b-0 border-l-0 border-gray-200 w-full">
                     <Menu/>
                     <div class="flex justify-between items-center px-5 bg-white"
                          :class="$route.name !=='change-profile' && $route.name !=='about' &&
@@ -44,6 +44,7 @@
     import config from "./config"
     import UpdateVersion from "./components/UpdateVersion"
     import DownloadingNewVersion from "./components/DownloadingNewVersion"
+    import MenuIcon from "./components/MenuIcon.vue"
     const {ipcRenderer} = require('electron')
 
 
@@ -52,7 +53,8 @@
             Sidebar,
             Menu, Search, FilterClass,
             UpdateVersion,
-            DownloadingNewVersion
+            DownloadingNewVersion,
+            MenuIcon
         },
         data(){
             return {

@@ -107,7 +107,7 @@
     import UniversityIcon from "./../../components/UniversityIcon"
     import SaveIcon from "./../../components/SaveIcon"
     import CameraIcon from "./../../components/CameraIcon"
-    import Message from "./components/Message"
+    import Message from "./components/Message.vue"
     import Loader from "./../../components/Loader"
     import Province from "./components/Province"
     import School from "./components/School"

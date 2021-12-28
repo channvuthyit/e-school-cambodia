@@ -8,5 +8,9 @@
     font-family: 'Nokora';
     src: url('./../../../public/font/Nokora/Nokora-Regular.ttf')
 }
+@font-face {
+    font-family: 'Barlow';
+    src: url('./../../../public/font/Barlow/Barlow-Regular.ttf')
+}
 
 @tailwind utilities;

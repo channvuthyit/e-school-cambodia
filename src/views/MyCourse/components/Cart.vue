@@ -4,12 +4,12 @@
             <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
                  v-if="!showCouponForm">
                 <div class="fixed inset-0 transition-opacity" aria-hidden="true">
-                    <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                    <div class="absolute inset-0 bg-black opacity-75"></div>
                 </div>
 
                 <!-- This element is to trick the browser into centering the modal contents. -->
                 <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-                <div class="inline-block align-bottom bg-white rounded text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
                      role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                     <div class="bg-white px-5 py-4">
                         <div class="flex items-center justify-between">
@@ -129,14 +129,14 @@
     import DeleteIcon from "./DeleteIcon"
     import Chevron from "./Chevron"
     import CloseIcon from "./CloseIcon"
-    import Coupon from "./Coupon"
+    import Coupon from "./Coupon.vue"
     import {mapActions, mapState}  from  "vuex"
     import helper from "./../../../helper/helper"
     import Loading from "./../../../components/Loading"
-    import ChooseDuration from "./../components/ChooseDuration"
-    import ConfirmDelete from "./../components/ConfirmDelete"
-    import RemoveCoupon from "./../components/RemoveCoupon"
-    import PaymentMethod from "./../components/PaymentMethod"
+    import ChooseDuration from "./../components/ChooseDuration.vue"
+    import ConfirmDelete from "./../components/ConfirmDelete.vue"
+    import RemoveCoupon from "./../components/RemoveCoupon.vue"
+    import PaymentMethod from "./../components/PaymentMethod.vue"
 
     export default{
         name: "Cart",
